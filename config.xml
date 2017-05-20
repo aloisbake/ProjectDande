@@ -4,12 +4,12 @@
     id          = "com.lynda.samoca "
     versionCode = "1" 
     version     = "1.0.0" >
-   <name>SAMOCA</name>
+   <name>Dande</name>
     <description>
-            A mobile guide to the SAMOCA. 
+            A mobile guide to the DANDE. 
     </description>
-    <author href="https://samoca.org" email="support@samoca.org ">
-             Chris Griffith 
+    <author href="https://dande.co.za" email="aloisbake@gmail.com">
+             Alois Bake 
     </author>
     
     <platform name="ios"/>
