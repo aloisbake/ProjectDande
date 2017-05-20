@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>San Angelico Museum of Contemporary Art</title>
+  <title>DANDE</title>
   <link rel="stylesheet" href="css/jquery.mobile.min.css">
   <style>
     #homeBanner {
@@ -17,10 +17,14 @@
       margin-right: auto;
     }
     
-    .banner {
-      display: block;
-      width: 100%;
-    }
+   .banner {
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+      #homeScreen {
+       background-color: darkgreen;
+      }
     
     #qrcode {
       display: block;
@@ -34,6 +38,16 @@
       width: 320px;
       height: 320px;
     }
+      #loginBtn {
+          max-width: 30%;
+          margin: 0 auto;
+          background-color: lightgreen;
+      }
+      #signupBtn {
+          max-width: 30%;
+          margin: 0 auto;
+          background-color: lightblue;
+      }
   </style>
   <link rel="stylesheet" href="css/leaflet.css" />
   <script src="js/jquery.js"></script>
@@ -46,11 +60,12 @@
 
 </head>
 
-<body>
+<body class="appbgcolor">
   <div id="homeScreen" data-role="page">
-    <img src="imgs/SAMOCA_banner_1.png" class="banner" />
+    <img src="imgs/logo.png" class="banner" />
     <div data-role="content">
-      <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+        <p style="color : #ffffff; text-align : center;"> Home is where<br > the heart is.</p>
+      <!--<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
         <li><a href="#currentExhibits">Current Exhibits</a></li>
         <li><a href="#pastExhibits">Past Exhibits</a></li>
         <li><a href="">Calendar of Events</a></li>
@@ -64,7 +79,22 @@
         <div class="ui-block-b">
           <a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
         </div>
-      </div>
+      </div>-->
+      <form>
+         <input type="text" name="CellNumber" id="text-6" value="" placeholder="Cell Number"><br >        
+         <input type="password" data-clear-btn="false" name="Password-1" id="Password-1" placeholder="Password" value="" autocomplete="off"><br>
+          <a href="#"> Forgot Password?</a>
+          <p></p>
+          <div id="loginBtn" class="ui-input-btn ui-btn ui-corner-all">
+            Login
+            <input type="button" data-enhanced="true" value="Enhanced">
+          </div><br>
+          <div id="signupBtn" class="ui-input-btn ui-btn ui-corner-all">
+              Signup
+              <input type="button" data-enhanced="true" value="Enhanced">
+          </div>
+        
+    </form>    
     </div>
   </div>
   <div id="currentExhibits" data-role="page">
